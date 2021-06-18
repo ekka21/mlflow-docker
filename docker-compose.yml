@@ -36,7 +36,7 @@ services:
     image: postgres:11
     container_name: mlflow_db
     expose:
-      - "${PG_PORT}"
+      - "${PG_PORT}:${PG_PORT}"
     networks:
       - A
     environment:
