@@ -19,7 +19,7 @@ services:
     image: minio/minio:latest
     container_name: aws-s3
     ports:
-      - 9000:9000
+      - "9000:9000"
     command: 
       server /date
     networks:
@@ -36,7 +36,7 @@ services:
     image: postgres:11
     container_name: mlflow_db
     expose:
-      - "${PG_PORT}:${PG_PORT}"
+      - "5432:5432"
     networks:
       - A
     environment:
