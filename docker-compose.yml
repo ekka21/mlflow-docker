@@ -1,4 +1,5 @@
 version: '3.2'
+
 services:
   create_buckets:
     image: minio/mc:RELEASE.2019-07-17T22-13-42Z
